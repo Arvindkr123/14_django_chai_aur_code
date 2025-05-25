@@ -26,5 +26,8 @@ urlpatterns = [
     path('profile/', views.profile, name='profile'),
     path('screen/', views.screen, name='screen'),
     path('chai/', include('chai.urls')),
+
+    # for developement
+    path("__reload__/", include("django_browser_reload.urls"))
 ]
 
