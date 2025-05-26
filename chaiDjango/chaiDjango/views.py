@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+
 def home(request):
     # return HttpResponse('Welcome home, you are chai aur code home page')
     return render(request, 'website/index.html')
